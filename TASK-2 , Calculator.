@@ -9,8 +9,8 @@ def Calculator():
     print("2. Subtraction")
     print("3. Multiplication")
     print("4. Division")
-    print("5.Exponention")
-    print("6.Floor Division")
+    print("5. Exponention")
+    print("6. Floor Division")
     op = input("Enter the Number of Operator From above the List (1/2/3/4/5/6) (or type 'exit' to quit): ")
     
     #Performing the Choosen Operator.
@@ -37,4 +37,6 @@ def Calculator():
     elif op == '6':
         result = n1 // n2
         print(f"Floor Division of {n1} and {n2} is : {result}")
+    else:
+        print(f"You Entered a Invalid Operator we can't to any Operation between {n1} and {n2}")
 Calculator()
