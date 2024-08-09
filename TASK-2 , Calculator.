@@ -9,7 +9,9 @@ def Calculator():
     print("2. Subtraction")
     print("3. Multiplication")
     print("4. Division")
-    op = input("Enter the Number of Operator From above the List (1/2/3/4): ")
+    print("5.Exponention")
+    print("6.Floor Division")
+    op = input("Enter the Number of Operator From above the List (1/2/3/4/5/6): ")
     
     #Performing the Choosen Operator.
     if op == '1':
@@ -27,5 +29,50 @@ def Calculator():
             print(f"Division  between {n1} and {n2} is : {result}")
         else:
             print(f"Division  between {n1} and {n2} cannot perform.")
+    elif op == '5':
+        result = n1 ** n2
+        print(f"Exponention of {n1} and {n2} is : {result}")
+    elif op == '6':
+        result = n1 // n2
+        print(f"Floor Division of {n1} and {n2} is : {result}")
+    
+Calculator()
+def Calculator():
+    #Asking the Two numbers as input from user.
+    n1 = float(input("Enter the Number 1:"))
+    n2 = float(input("Enter the Number 2:"))
+    
+    #Displaying the Operators for performing.
+    print("Choose an operator from below list:")
+    print("1. Addition")
+    print("2. Subtraction")
+    print("3. Multiplication")
+    print("4. Division")
+    print("5.Exponention")
+    print("6.Floor Division")
+    op = input("Enter the Number of Operator From above the List (1/2/3/4/5/6): ")
+    
+    #Performing the Choosen Operator.
+    if op == '1':
+        result = n1 + n2
+        print(f"Addition between {n1} and {n2} is : {result}")
+    elif op == '2':
+        result = n1 - n2
+        print(f"Subtraction between {n1} and {n2} is : {result}")
+    elif op == '3':
+        result = n1 * n2
+        print(f"Multiplication between {n1} and {n2} is : {result}")
+    elif op == '4':
+        if n2 != 0:
+            result = n1 / n2 
+            print(f"Division  between {n1} and {n2} is : {result}")
+        else:
+            print(f"Division  between {n1} and {n2} cannot perform.")
+    elif op == '5':
+        result = n1 ** n2
+        print(f"Exponention of {n1} and {n2} is : {result}")
+    elif op == '6':
+        result = n1 // n2
+        print(f"Floor Division of {n1} and {n2} is : {result}")
     
 Calculator()
