@@ -37,6 +37,4 @@ def Calculator():
     elif op == '6':
         result = n1 // n2
         print(f"Floor Division of {n1} and {n2} is : {result}")
-      
-    
 Calculator()
